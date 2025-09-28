@@ -6,11 +6,39 @@
 
 .menu-container {
   color: #fff;
-  background-color: #5995DA;  /* Blue */
+  background-color: #5995da; /* Blue */
   padding: 20px 0;
+  display: flex; /* Make this a flex container */
+  justify-content: center; /* Horiz. align contained items */
+  /* Other Alignments: */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
 }
 
 .menu {
-  border: 1px solid #fff;  /* For debugging */
+  /* For debugging */
+  /* border: 1px solid #fff; */
+
   width: 900px;
+  display: flex; /* Nested flex container */
+
+  /* Horiz. align multiple items */
+  justify-content: space-between; /* Evenly distributed in the line. */
+
+  /*  Evenly distributed in line, with half-size spaces on either end. */
+  /* justify-content: space-around; */
+}
+
+/* Flex containers only position elements one level deep. */
+/* By grouping .signup and .login into .links, .menu only has 2 flex items. */
+.links {
+  /* For debugging */
+  /* border: 1px solid #fff; */
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px; /* Margins work just like in the normal box model */
 }
