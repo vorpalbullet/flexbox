@@ -44,18 +44,18 @@
 }
 
 .header-container {
-  color: #5995DA;
-  background-color: #D6E9FE;
+  color: #5995da;
+  background-color: #d6e9fe;
   display: flex;
   justify-content: center;
 }
 
 .header {
   width: 900px;
-  height: 300px;  /* setting explicit height allows items to be vert. aligned */
+  height: 300px; /* setting explicit height allows items to be vert. aligned */
   display: flex;
   justify-content: space-between;
-  align-items: center;  /* Cross-axis (vert.) alignment */
+  align-items: center; /* Cross-axis (vert.) alignment */
   /* Other Alignments: */
   /* align-items: flex-start; */
   /* align-items: flex-end; */
@@ -68,4 +68,31 @@
 .social {
   /* For debugging */
   /* border: 1px solid #5995DA; */
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+
+  /* Control whether flex container is single-line or multi-line,
+     and the direction of the cross-axis (determines direction of new lines). */
+  flex-wrap: wrap; /* multi-line. */
+
+  /* single-line. */
+  /* flex-wrap: nowrap; */
+
+  /* cross-start and cross-end directions swapped. */
+  /* flex-wrap: wrap-reverse; */
+}
+
+.photo-grid-item {
+  /* border: 1px solid #fff; */
+  width: 300px;
+  height: 300px;
 }
