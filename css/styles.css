@@ -42,3 +42,30 @@
 .login {
   margin-left: 20px; /* Margins work just like in the normal box model */
 }
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;  /* setting explicit height allows items to be vert. aligned */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  /* Cross-axis (vert.) alignment */
+  /* Other Alignments: */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: stretch; */
+  /* align-items: baseline; */
+}
+
+.subscribe,
+.logo,
+.social {
+  /* For debugging */
+  /* border: 1px solid #5995DA; */
+}
