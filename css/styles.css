@@ -166,3 +166,11 @@
   flex: initial;
   width: 300px;
 }
+
+/* auto-margins can be an alternative to an extra div for aligning a group of
+   items left/right.
+   Think of auto-margins as a "divider" for flex items in the container. */
+.auto-margin-signup {
+  /* auto-margins eat up *all* the extra space in a flex container */
+  margin-left: auto;
+}
