@@ -93,6 +93,9 @@
 @media (min-width:600px) {
   .photo-grid {
     justify-content: center;
+
+    /* flex-direction can control the order of items */
+    /* flex-direction: row-reverse; */
   }
 }
 
@@ -102,6 +105,9 @@
      Useful for responsive design; most mobile layouts are single column,
      while most desktop layouts stack elements horizontally. */
     flex-direction: column;
+
+    /* flex-direction can control the order of items */
+    /* flex-direction: column-reverse; */
 
     /* Rotating direction of the container also rotates the direction of
       justify-content and align-items. */
@@ -113,4 +119,25 @@
   /* border: 1px solid #fff; */
   width: 300px;
   height: 300px;
+}
+
+/* It's also possible to control item position through the items order property.
+   Default is 0; increasing/decreasing moves the item right/left. */
+/* Unlike row-reverse and column-reverse, order works across row/column
+   boundaries.
+*/
+/* Swap order of .one and .five */
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+/* Can do the same with vertical alignment. */
+.social,
+.subscribe {
+  align-self: flex-end;  /* override the containers align-items */
+  margin-bottom: 20px;  /* margin works as normal */
 }
