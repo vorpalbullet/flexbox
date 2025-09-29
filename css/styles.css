@@ -78,7 +78,6 @@
 .photo-grid {
   width: 900px;
   display: flex;
-  justify-content: center;
 
   /* Control whether flex container is single-line or multi-line,
      and the direction of the cross-axis (determines direction of new lines). */
@@ -89,6 +88,25 @@
 
   /* cross-start and cross-end directions swapped. */
   /* flex-wrap: wrap-reverse; */
+}
+
+@media (min-width:600px) {
+  .photo-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width:599px) {
+  .photo-grid {
+      /* Control whether items render horizontally (default) or vertically.
+     Useful for responsive design; most mobile layouts are single column,
+     while most desktop layouts stack elements horizontally. */
+    flex-direction: column;
+
+    /* Rotating direction of the container also rotates the direction of
+      justify-content and align-items. */
+      align-items: center;
+  }
 }
 
 .photo-grid-item {
