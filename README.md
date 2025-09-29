@@ -14,5 +14,12 @@ Use flexbox to lay out your web pages as much as possible, reserving floats for 
 * flex-direction if you need columns instead of rows.
   * the row-reverse or column-reverse values to flip item order.
 * order to customize the order of individual elements.
+  * use sparingly, messes with site semantics and accessibility
 * align-self to vertically align individual items.
 * flex to create flexible boxes that can stretch and shrink.
+  * flex-grow to define how fast they grow.
+  * flex-shrink to define how fast they shrink.
+  * flex-basis to override 'width'.
+* flex-wrap to make items wrap onto new rows
+  * align-content to align wrapped items on the cross-axis
+* gap to add gaps between items
