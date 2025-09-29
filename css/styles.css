@@ -134,3 +134,22 @@
   align-self: flex-end;  /* override the containers align-items */
   margin-bottom: 20px;  /* margin works as normal */
 }
+
+/* Flex items are *flexible*: they can shrink/stretch to match their containers
+   width. The 'flex' property acts as a weight to tell the container how to
+   distribute space to each item. */
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #d6e9fe;
+  height: 200px;
+  flex: 1;  /* items with the same flex will stretch equally */
+}
+
+.footer-three {
+  flex: 2;  /* will grow twice as much as `flex: 1` */
+}
