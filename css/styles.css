@@ -153,3 +153,16 @@
 .footer-three {
   flex: 2;  /* will grow twice as much as `flex: 1` */
 }
+
+/* Can mix flexible boxes with fixed width ones */
+/* This is a good pattern for fixed-width sidebars with flexible content. */
+.footer-one,
+.footer-three {
+  background-color: #5995da;
+
+  /* fall back to explicit 'width' */
+  /* without flex initial, would still have flex from previous rules, and width
+     would be ignored */
+  flex: initial;
+  width: 300px;
+}
