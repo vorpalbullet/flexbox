@@ -63,13 +63,6 @@
   /* align-items: baseline; */
 }
 
-.subscribe,
-.logo,
-.social {
-  /* For debugging */
-  /* border: 1px solid #5995DA; */
-}
-
 .photo-grid-container {
   display: flex;
   justify-content: center;
