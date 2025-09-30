@@ -30,6 +30,7 @@ const flexDirectionContainer = document.getElementById(
 );
 const rowButton = document.getElementById("row-btn");
 const columnButton = document.getElementById("column-btn");
+const justifyContentSelect = document.getElementById("justify-content-select");
 
 rowButton.addEventListener("click", (e) => {
   flexDirectionContainer.style.flexDirection = "row";
@@ -38,3 +39,7 @@ rowButton.addEventListener("click", (e) => {
 columnButton.addEventListener("click", (e) => {
   flexDirectionContainer.style.flexDirection = "column";
 });
+
+justifyContentSelect.addEventListener("change", (e) => {
+  flexDirectionContainer.style.justifyContent = justifyContentSelect.value;
+})
