@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const containerWidthInput = document.getElementById("container-width-input");
 const containerWidthOutput = document.getElementById("container-width-output");
@@ -23,4 +23,18 @@ blockButton.addEventListener("click", (e) => {
 
 flexButton.addEventListener("click", (e) => {
   blockVsFlexContainer.style.display = "flex";
+});
+
+const flexDirectionContainer = document.getElementById(
+  "flex-direction-container"
+);
+const rowButton = document.getElementById("row-btn");
+const columnButton = document.getElementById("column-btn");
+
+rowButton.addEventListener("click", (e) => {
+  flexDirectionContainer.style.flexDirection = "row";
+});
+
+columnButton.addEventListener("click", (e) => {
+  flexDirectionContainer.style.flexDirection = "column";
 });

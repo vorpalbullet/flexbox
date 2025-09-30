@@ -14,6 +14,16 @@
   border: 1px solid red;
 }
 
+.h250 {
+  height: 250px;
+}
+
+.item {
+  padding: 10px 16px;
+  border: 2px solid orange;
+  background-color: peachpuff;
+}
+
 #reactive-form-demo form {
   padding: 8px;
   width: 550px;
@@ -45,12 +55,7 @@
   flex: 80px;
 }
 
-#block-vs-flex #b-vs-f-container {
-  height: 250px;
-}
-
-#block-vs-flex .item {
-  padding: 10px 16px;
-  border: 2px solid orange;
-  background-color: peachpuff;
+#flex-direction-container {
+  display: flex;
+  /* flex-direction: column; */
 }
