@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Interactive Guide to Flexbox</title>
+</head>
+
+<body>
+  <div id="reactive-form-demo" class="demo-box">
+    <div>
+      <label for="container-width-input">Container width:</label>
+      <span id="container-width-output">550</span>
+      <input type="range" id="container-width-input" min="250" max="550"
+        step="10" value="550">
+    </div>
+
+    <form id="container" class="container">
+      <label for="name" class="label name-label">
+        Name:
+        <input id="name" class="txt-input" type="text" placeholder="Elena">
+      </label>
+      <label for="email" class="label email-label">
+        Email:
+        <input id="email" class="txt-input" type="text" placeholder="user@domain.com">
+      </label>
+      <button class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
