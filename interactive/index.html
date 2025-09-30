@@ -52,19 +52,35 @@
       <div class="item">the</div>
       <div class="item">world</div>
     </div>
-    <div>
-      flex-direction:
-      <button id="row-btn">row</button>
-      <button id="column-btn">column</button>
-      justify-content:
-      <select name="justify-content" id="justify-content-select">
-        <option value="flex-start">flex-start</option>
-        <option value="center">center</option>
-        <option value="flex-end">flex-end</option>
-        <option value="space-between">space-between</option>
-        <option value="space-around">space-around</option>
-        <option value="space-evenly">space-evenly</option>
-      </select>
+    <div class="controls-container">
+      <label for="flex-direction">
+        flex-direction:
+        <select name="flex-direction" id="flex-direction-select">
+          <option value="row">row</option>
+          <option value="column">column</option>
+        </select>
+      </label>
+      <label for="justify-content">
+        justify-content:
+        <select name="justify-content" id="justify-content-select">
+          <option value="flex-start">flex-start</option>
+          <option value="center">center</option>
+          <option value="flex-end">flex-end</option>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+          <option value="space-evenly">space-evenly</option>
+        </select>
+      </label>
+      <label for="align-items">
+        align-items:
+        <select name="align-items" id="align-items-select">
+          <option value="stretch">stretch</option>
+          <option value="flex-start">flex-start</option>
+          <option value="center">center</option>
+          <option value="flex-end">flex-end</option>
+          <option value="baseline">baseline</option>
+        </select>
+      </label>
     </div>
 
   </div>

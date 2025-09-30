@@ -5,6 +5,21 @@
   /* border: 1px solid red; */
 }
 
+.controls-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.controls-container label {
+  flex: 1;
+  flex-basis: 160px;
+}
+
+.controls-container select {
+  width: 100%;
+}
+
 .demo-box {
   border: 1px solid blue;
   margin: 20px 0px;

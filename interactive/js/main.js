@@ -4,11 +4,7 @@ const containerWidthInput = document.getElementById("container-width-input");
 const containerWidthOutput = document.getElementById("container-width-output");
 const container = document.getElementById("container");
 
-// console.log(containerWidthInput.value);
-
 containerWidthInput.addEventListener("input", (event) => {
-  // do stuff
-  // console.log(containerWidthInput.value);
   containerWidthOutput.innerHTML = containerWidthInput.value;
   container.style.width = containerWidthInput.value + "px";
 });
@@ -28,18 +24,19 @@ flexButton.addEventListener("click", (e) => {
 const flexDirectionContainer = document.getElementById(
   "flex-direction-container"
 );
-const rowButton = document.getElementById("row-btn");
-const columnButton = document.getElementById("column-btn");
+
+const flexDirectionSelect = document.getElementById("flex-direction-select");
 const justifyContentSelect = document.getElementById("justify-content-select");
+const alignItemsSelect = document.getElementById("align-items-select");
 
-rowButton.addEventListener("click", (e) => {
-  flexDirectionContainer.style.flexDirection = "row";
-});
-
-columnButton.addEventListener("click", (e) => {
-  flexDirectionContainer.style.flexDirection = "column";
-});
+flexDirectionSelect.addEventListener("change", (e) => {
+  flexDirectionContainer.style.flexDirection = flexDirectionSelect.value;
+})
 
 justifyContentSelect.addEventListener("change", (e) => {
   flexDirectionContainer.style.justifyContent = justifyContentSelect.value;
+})
+
+alignItemsSelect.addEventListener("change", (e) => {
+  flexDirectionContainer.style.alignItems = alignItemsSelect.value;
 })
