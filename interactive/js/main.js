@@ -12,3 +12,15 @@ containerWidthInput.addEventListener("input", (event) => {
   containerWidthOutput.innerHTML = containerWidthInput.value;
   container.style.width = containerWidthInput.value + "px";
 });
+
+const blockVsFlexContainer = document.getElementById("b-vs-f-container");
+const blockButton = document.getElementById("block-btn");
+const flexButton = document.getElementById("flex-btn");
+
+blockButton.addEventListener("click", (e) => {
+  blockVsFlexContainer.style.display = "block";
+});
+
+flexButton.addEventListener("click", (e) => {
+  blockVsFlexContainer.style.display = "flex";
+});
